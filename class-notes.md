@@ -30,8 +30,8 @@ Headless browser -> browser does not have to do teh work of laoding UI in browse
 
 
 React-Testing-library
-1. Install React Testing library
-2. Install Jest 
+1. Install React Testing library - npm install --save-dev @testing-library/react
+2. Install Jest - npm install -D jest
 3. Configure Jest -> npx jest --init 
 4. Typescript -> N
 5. environment -> jsdom (broswer-like)
@@ -40,13 +40,13 @@ React-Testing-library
 8. automatically clear before test -> y 
 9. Creates jest.config.js 
 10. scripts -> test : jest 
-11. npm install -D test-environment-jsdom
+11. npm install -D jest-environment-jsdom
 12. jest is trying to find test cases in the app under __tests__ folder 
 13. Create first test -> sum.test.js under __tests__ folder
 14. test("testcase name ", () => { })
 15. Every test case should have some assertion -  `expect` to return - `toBe`  expeect(sum(2,3)).toBe(5) 
 16. import sum.js (component) inside sum.test.js 
-17. install babel-jest @babel/core @babel/preset-env
+17. npm install --save-dev babel-jest @babel/core @babel/preset-env - why ? because jest does not understand import statement. 
 18. to configure babel -> babelrc file or babel.config.js
 19. 
  
