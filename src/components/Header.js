@@ -27,7 +27,7 @@ const navLinks = [
 
 export const Title = () => {
   return(
-    <Link to="/"> <img className="logo ml-2.5 w-[70px]" alt={"logo"} src= {logo} /> </Link>
+    <Link to="/"> <img data-testid="logo" className="logo ml-2.5 w-[70px]" alt={"logo"} src= {logo} /> </Link>
   )
 };
 
@@ -78,10 +78,10 @@ export const NavComponent = () => {
             </li>
             ))
           }
-          <li className="p-2.5"><Link to="/cart"> <button className="nav--btn"> Cart <span className='text-orange font-bold pl-1'>{totalItemsCount}</span> </button> </Link>
+          <li className="p-2.5"><Link to="/cart"> <button className="nav--btn" data-testid="cart"> Cart <span className='text-orange font-bold pl-1'>{totalItemsCount}</span> </button> </Link>
           </li>
           <li className="p-2.5"> <button className="nav--btn" onClick={() => {toggleLogin()}} > {isLoggedIn?  "Logout " : "Login " }  
-              <span className={isOnline ? "text-green" : "text-red" }>●</span></button>
+              <span data-testid="online-status" className={isOnline ? "text-green" : "text-red" }>●</span></button>
           </li>
         </ul>
       </div>
