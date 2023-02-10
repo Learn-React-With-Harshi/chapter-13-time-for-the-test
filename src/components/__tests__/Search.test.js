@@ -39,11 +39,13 @@ test("Restaurants should load on Homepage", async () => {
     </StaticRouter>
   );
 
-  await waitFor(() => expect(body.getByTestId("search-btn")));
+  await waitFor(function (){
 
-  const resList = body.getByTestId("res-list");
+    const resList = body.getByTestId("res-list");
+    expect(resList.children.length).toBe(15);
+  });
 
-  expect(resList.children.length).toBe(15);
+  
 
 });
 
@@ -69,6 +71,7 @@ test("Search for string(food) on Homepage", async () => {
   const searchBtn = body.getByTestId("search-btn");
 
   fireEvent.click(searchBtn);
+
 
   const resList = body.getByTestId("res-list");
 
