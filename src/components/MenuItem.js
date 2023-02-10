@@ -34,9 +34,9 @@ const MenuItem = ({item}) => {
       <div className="flex flex-col justify-center items-center w-[118px] h-[150px]">
         { cloudinaryImageId  && <img className="w-[118px] h-[96px]" src={ ITEM_IMG_CDN  + cloudinaryImageId } alt={item?.name}/> }
         <div className=" flex justify-evenly items-center w-[100px] h-[34px] mt-2.5 text-gray-count outline-none border bg-white border-gray ">
-          <button className="text-xl text-gray-count font-semibold" onClick={() => handleRemoveItem(id)}> - </button>
+          <button data-testid="remove-btn" className="text-xl text-gray-count font-semibold" onClick={() => handleRemoveItem(id)}> - </button>
           <span className="text-base text-green"> {itemCount} </span>
-          <button className="text-green text-xl" onClick={() => handleAddItem(item)}> + </button>
+          <button data-testid="add-btn" className="text-green text-xl" onClick={() => handleAddItem(item)}> + </button>
         </div>
       </div>
     </div>

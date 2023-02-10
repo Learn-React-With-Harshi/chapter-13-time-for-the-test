@@ -2,13 +2,13 @@
    Documenting my learning journey of [Namaste React Live Course](https://learn.namastedev.com/) conducted by Akshay Saini
 
 ## Class Summary `Chapter-13 Time for the test` (05/02/2023)
-  Chapter-12 is all about handling data using external state management library `Redux`. Akshay made it easy to understand this knowledge heavy complex concept. We discussed the problems with other ways of data management like Props drilling and Context API. Importance of Redux, Redux Toolkit vs React-Redux and step by step configuration and implementation of React Redux were done in this chapter. Jargons like reducer, dispatch, action, selector, slice, store, state, subscription were explained clearly. It was mind blowing and still could not stop thinking about it.
+  We are marching towards the end of the course as well as the project that we are developing. Chapter-13 is all about testing the application. Yes ! Testing is also a part of development, in fact, important part of development which many developers don't do to met deadlines. In this chapter, different types of testing and testing frameworks were discussed. Detailed explanation and hands-on on testing frameworks `jest` and `react-testing-library` were done. We tried to cover test cases for major features of our app. It was again a knowlegde heavy as well as lengthy session.
 
   Find my version of detailed explanation of these concepts in [theory-assignment.md](https://github.com/Learn-React-With-Harshi/chapter-13-time-for-the-test/blob/main/theory-assignment.md). Check [coding-assignment.md](https://github.com/Learn-React-With-Harshi/chapter-13-time-for-the-test/blob/main/coding-assignment.md) for all the features that I implemented in this chapter.
 
-One line about this chapter : `When we need to make a modification in the store, we must first dispatch an action that calls a reducer function which updates the slice of the store, and when we want to read from the store, we must first call a Selector Hook (function) for subscribing only to the required slice of store, which can be used to update the data in the component`.
+One line about this chapter : `Writing testcases & Testing the code are equally important to writing code and developing teh features `
 
-Check out [Chapter-12 Live](https://learn-react-with-harshi-chapter-12.netlify.app/) for the live demo of this chapter's coding assignment `(InstaFood Version 6.0)`. Also check out the following chapters to see how InstaFood has progressed. Happy Reacting !!!
+Check out [Chapter-13 Live](https://learn-react-with-harshi-chapter-13.netlify.app/) for the live demo of this chapter's coding assignment `(InstaFood Version 6.0)`. Also check out the following chapters to see how InstaFood has progressed. Happy Reacting !!!
 
 
 If you are interested in other chapters of this series, please browse through the [my repositories](https://github.com/orgs/Learn-React-With-Harshi/repositories)

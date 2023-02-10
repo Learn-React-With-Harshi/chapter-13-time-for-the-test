@@ -30,7 +30,7 @@ Headless browser -> browser does not have to do teh work of laoding UI in browse
 
 
 React-Testing-library
-1. Install React Testing library - npm install --save-dev @testing-library/react
+1. Install React Testing library - npm install --save-dev @testing-library/react @testing-library/jest-dom
 2. Install Jest - npm install -D jest
 3. Configure Jest -> npx jest --init 
 4. Typescript -> N
@@ -48,9 +48,9 @@ React-Testing-library
 16. import sum.js (component) inside sum.test.js 
 17. npm install --save-dev babel-jest @babel/core @babel/preset-env - why ? because jest does not understand import statement. 
 18. to configure babel -> babelrc file or babel.config.js
-19. 
+19. package.json ->in scripts  watch test : "test --watch"
  
-
+20. 
 
 
 

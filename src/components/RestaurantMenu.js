@@ -37,7 +37,7 @@ const RestaurantMenu = () => {
             <h3 className="font-bold text-lg">Recommended</h3>
             <p className="mt-3.5 w-3/5 text-gray-desc text-sm">{Object.keys(restaurant?.menu?.items).length} ITEMS</p>
           </div>
-          <div className="flex flex-col justify-evenly">
+          <div className="flex flex-col justify-evenly" data-testid="menu">
             { Object.values(restaurant?.menu?.items).map( item => 
               <MenuItem  key={item.id} item={item} />
             )}

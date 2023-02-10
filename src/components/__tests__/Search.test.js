@@ -25,7 +25,7 @@ test("Shimmer should load on Homepage", () => {
 
   const shimmer = body.getByTestId("shimmer");
 
-  expect(shimmer.children.length).toBe(10);
+  expect(shimmer.children.length).toBe(8);
 
   console.log(shimmer);
 });
@@ -45,7 +45,6 @@ test("Restaurants should load on Homepage", async () => {
 
   expect(resList.children.length).toBe(15);
 
-  //console.log(shimmer);
 });
 
 test("Search for string(food) on Homepage", async () => {

@@ -47,7 +47,7 @@ test("Cart should have 0 items on rendering header", () => {
   );
 
   // Check if logo is loaded
-  const cart = header.getByTestId("cart");
+  const cart = header.getByTestId("cart-count");
 
-  expect(cart.innerHTML).toBe("Cart ");
+  expect(cart.innerHTML).toBe("0");
 });

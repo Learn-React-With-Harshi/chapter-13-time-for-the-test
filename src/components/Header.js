@@ -78,7 +78,7 @@ export const NavComponent = () => {
             </li>
             ))
           }
-          <li className="p-2.5"><Link to="/cart"> <button className="nav--btn" data-testid="cart"> Cart <span className='text-orange font-bold pl-1'>{totalItemsCount}</span> </button> </Link>
+          <li className="p-2.5"><Link to="/cart"> <button className="nav--btn"> Cart <span data-testid="cart-count" className='text-orange font-bold pl-1'>{totalItemsCount}</span> </button> </Link>
           </li>
           <li className="p-2.5"> <button className="nav--btn" onClick={() => {toggleLogin()}} > {isLoggedIn?  "Logout " : "Login " }  
               <span data-testid="online-status" className={isOnline ? "text-green" : "text-red" }>●</span></button>
